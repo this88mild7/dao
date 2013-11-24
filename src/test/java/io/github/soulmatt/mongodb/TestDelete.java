@@ -2,6 +2,8 @@ package io.github.soulmatt.mongodb;
 
 import static org.junit.Assert.assertNotNull;
 
+import io.github.soulmatt.model.User;
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -24,7 +26,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = { "classpath:mongodb.xml" })
+@ContextConfiguration(locations = { "classpath:spring-context.xml" })
 @Slf4j
 public class TestDelete {
 

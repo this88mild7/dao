@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="userQuery">
+    
+	<insert id="insert" keyProperty="id" parameterType="User">
+		INSERT USER
+		(
+			ic,
+			name,
+			age,
+			cdate
+ 		)
+ 		VALUES(
+   			#{ ic },
+   			#{ name },
+   			#{ age },
+   			NOW()
+   		)
+	</insert>
+
+	<insert id="insertList" parameterType="list">
+		INSERT INTO USER (ic, name, age, cdate)
+		VALUES  
+			<foreach collection="list" item="user" separator=",">
+				( #{ user.ic }, #{ user.name }, #{ user.age }, NOW() )
+			</foreach>
+	</insert>
+	
+  <select id="list" resultType="User">
+    SELECT /* userQuery.list  */
+    	*
+    FROM 
+    	USER
+  </select>
+  
+	
+</mapper>

@@ -1,4 +1,4 @@
-package io.github.soulmatt.mongodb;
+package io.github.soulmatt.model;
 
 import java.util.Date;
 

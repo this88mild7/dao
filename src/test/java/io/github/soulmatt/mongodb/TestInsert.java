@@ -2,6 +2,8 @@ package io.github.soulmatt.mongodb;
 
 import static org.junit.Assert.assertNotNull;
 
+import io.github.soulmatt.model.Lucky;
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;

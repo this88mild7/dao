@@ -1,4 +1,4 @@
-package io.github.soulmatt.mongodb;
+package io.github.soulmatt.model;
 
 import java.util.Date;
 
@@ -11,9 +11,9 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Data
 public class User {
 	
-	User() {}
+	public User() {}
 	
-	User(String ic, String name, int age) {
+	public User(String ic, String name, int age) {
 		this.setIc(ic);
 		this.setName(name);
 		this.setAge(age);
@@ -26,5 +26,5 @@ public class User {
 	String name;
 	int age;
 	Date cdate;
- 
+	
 }

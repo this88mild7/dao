@@ -7,6 +7,16 @@
     </encoder>
   </appender>
   
+  <!-- 
+  <logger name="java.sql">
+    <level value="debug" />
+  </logger>
+  
+  <logger name="org.springframework.data.mongodb">
+    <level value="debug" />
+  </logger>
+   -->
+    
   <root level="info">
     <appender-ref ref="STDOUT" />
   </root>
